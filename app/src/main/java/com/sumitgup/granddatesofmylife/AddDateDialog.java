@@ -44,7 +44,7 @@ public class AddDateDialog extends DialogFragment {
                 MyDate myDate = new MyDate();
 
                 int day = mDate.getDayOfMonth();
-                int month = mDate.getMonth() + 1;
+                int month = mDate.getMonth();
                 int year = mDate.getYear();
 
                 Calendar cal = Calendar.getInstance();
