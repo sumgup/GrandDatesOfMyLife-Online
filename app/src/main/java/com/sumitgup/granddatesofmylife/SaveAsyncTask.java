@@ -37,7 +37,7 @@ public class SaveAsyncTask extends AsyncTask<MyDate, Void, Boolean> {
         } catch (Exception e) {
             //e.getCause();
             String val = e.getMessage();
-            String val2 = val;
+            String val2 = val; // Adding coment
             return false;
         }
     }
