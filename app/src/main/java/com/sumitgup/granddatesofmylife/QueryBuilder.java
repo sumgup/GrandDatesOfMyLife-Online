@@ -18,7 +18,7 @@ public class QueryBuilder {
      * @return
      */
     public String getApiKey() {
-        return "RVyQwMUq1vT8ukqmaYu5vmQBPiO2Tow9";
+        return "Mki0i9USzNmtv-UOtCcfTKoyqGNlGI8S";
     }
 
     /**
@@ -53,21 +53,25 @@ public class QueryBuilder {
      * Builds a complete URL using the methods specified above
      * @return
      */
-    public String buildContactsSaveURL()
+    public String buildDatesSaveURL()
     {
         return getBaseUrl()+documentRequest()+docApiKeyUrl();
     }
 
-    /**
-     * Formats the contact details for MongoHQ Posting
-     * @param MyDate: Details of the person
-     * @return
-     */
+
     public String createDate(MyDate myDate)
     {
         return String
                 .format("{\"document\"  : {\"date\": \"%s\", "
-                                + "\"description\": \"%s\"}",
+                                + "\"description\": \"%s\"}, \"safe\" : true}",
                         myDate.date, myDate.description);
+
+
+
+//        return String
+//                .format("{\"document\"  : {\"first_name\": \"%s\", "
+//                                + "\"last_name\": \"%s\", \"email\": \"%s\", "
+//                                + "\"phone\": \"%s\"}, \"safe\" : true}",
+//                        "aaa", "bbb", "vvv", "999");
     }
 }
