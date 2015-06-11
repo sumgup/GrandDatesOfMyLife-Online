@@ -65,13 +65,5 @@ public class QueryBuilder {
                 .format("{\"document\"  : {\"date\": \"%s\", "
                                 + "\"description\": \"%s\"}, \"safe\" : true}",
                         myDate.date, myDate.description);
-
-
-
-//        return String
-//                .format("{\"document\"  : {\"first_name\": \"%s\", "
-//                                + "\"last_name\": \"%s\", \"email\": \"%s\", "
-//                                + "\"phone\": \"%s\"}, \"safe\" : true}",
-//                        "aaa", "bbb", "vvv", "999");
     }
 }
